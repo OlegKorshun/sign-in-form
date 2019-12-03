@@ -1,0 +1,456 @@
+/* FONT */
+@font-face {
+  font-family: Poppins-Regular;
+  src: url('../fonts/poppins/Poppins-Regular.ttf'); 
+}
+
+@font-face {
+  font-family: Poppins-Medium;
+  src: url('../fonts/poppins/Poppins-Medium.ttf'); 
+}
+/* ////////////////////////////////// */
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px #fff inset !important;
+}
+
+body {
+  font-family: Poppins-Regular, sans-serif;
+}
+
+.background-gradient {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+}
+
+
+
+/* General styles for blocks */
+.sign-in-option-container {
+  margin-bottom: 25px;
+  width: 100%;
+}
+
+.last-option-container {
+  margin-bottom: 0;
+}
+
+.sign-in-option-container-margin {
+margin-bottom: 10px;
+}
+
+.sign-in-option-container-title {
+  margin-bottom: 5px;
+  text-align: center;
+  font-size: 15px;
+  color: #7f8c8d;
+}
+/* ////////////////////////////////// */
+
+
+
+.sign-in-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 500px;
+  margin: 15px;
+  padding: 55px;
+  background: #fff;
+  box-shadow: 0 10px 40px -14px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+}
+
+@media (max-width: 576px) {
+  .sign-in-container {
+      padding-left: 15px;
+      padding-right: 15px;
+  }
+}
+
+.app-name {
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 40px;
+  line-height: 1.2;
+  color: #e74c3c;
+}
+
+.sign-in-title {
+  margin-bottom: 15px;
+  text-align: center;
+  font-size: 30px;
+  line-height: 1.2;
+  color: #333333;
+}
+
+
+
+/* Block with Social media buttons. Sign In using social networks*/
+.social-btns-container {
+  display:flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: flex-end;
+  max-width: 340px;
+}
+
+.social-btns {
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 340px;
+  list-style: none;
+}
+
+@media (max-width: 399px) {
+  .social-btns {
+    justify-content: center;
+  }
+}
+
+.social-btns li {
+  margin: 10px 10px 5px 10px;
+}
+
+.social-btns .social-btn {
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  width: 65px;
+  height: 65px;
+  text-decoration: none;
+  border-radius: 50%;
+  box-shadow: 0 5px 15px -5px rgba(0,0,0,0.7);
+  background-color: #f5f5f5;
+  color: #3498db;
+}
+
+.social-btns .btn-google {
+  color: #ea4335;
+}
+.social-btns .btn-facebook {
+  color: #4267B2;
+}
+.social-btns .btn-twitter {
+  color: #1DA1F2;
+}
+.social-btns .btn-instagram {
+  color: #e6683c;
+}
+.social-btns .btn-vkontakte {
+  color: #4680C2;
+}
+.social-btns .btn-odnoklassniki {
+  color: #ee8208;
+}
+.social-btns .btn-github {
+  color: #24292E;
+}
+.social-btns .btn-linkedin {
+  color: #0A66C2;
+}
+
+.social-btns .social-btn i {
+  font-size: 24px; 
+  transition: 0.2s linear;
+}
+
+.social-btns .social-btn:hover i {
+  transform: scale(1.3);
+  color: #f5f5f5
+}
+
+.social-btns .social-btn::before {
+  content: "";
+  position: absolute;
+  left: -110%;
+  top: 90%;
+  width: 120%;
+  height: 120%;
+  background: #3498db;
+  transform: rotate(45deg); 
+}
+
+.social-btns .btn-google::before {
+  background: #ea4335;
+}
+.social-btns .btn-facebook::before {
+  background: #4267B2;
+}
+.social-btns .btn-twitter::before {
+  background: #1DA1F2;
+}
+.social-btns .btn-instagram::before {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+}
+.social-btns .btn-vkontakte::before {
+  background: #4680C2;
+}
+.social-btns .btn-odnoklassniki::before {
+  background: #ee8208;
+}
+.social-btns .btn-github::before {
+  background: #24292E;
+}
+.social-btns .btn-linkedin::before {
+  background: #0A66C2;
+}
+
+.social-btns .social-btn:hover::before {
+  animation: hover-btn 0.7s 1;
+  top: -10%;
+  left: -10%;
+}
+
+@keyframes hover-btn {
+  0%{
+    left: -110%;
+    top: 90%;
+  }50%{
+    left: 10%;
+    top: -30%;
+  }100%{
+    top: -10%;
+    left: -10%;
+  }
+}
+
+.hidden-attribute {
+  opacity: 1;
+  visibility: visible;
+  transition: visibility 0.5s linear, opacity 0.8s linear;
+}
+
+.hide-content {
+  max-height: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: visibility 0.5s linear, opacity linear 0.3s;
+}
+
+.trigger-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: flex-end;
+  width: 100%;
+  margin-right: 10px;
+}
+
+.trigger-wrap button{
+  border: none;
+  cursor: pointer;
+  background: none;
+  font-size: 14px;
+  line-height: 1;
+  color: #2e9cc3;
+}
+
+.trigger-wrap button:focus {
+  outline: none;
+}
+
+.trigger-hide {
+  margin-top: 10px;
+}
+
+.trigger-wrap #trigger-show:after,
+.trigger-wrap #trigger-hide:after {
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  margin-left: 5px;
+  vertical-align: middle;
+  border-left: 1px solid #2e9cc3;
+  border-top: 1px solid #2e9cc3;
+}
+
+.trigger-wrap #trigger-show:after {
+  margin-top: -5px;
+  transform: rotate(-135deg);
+}
+
+.trigger-wrap #trigger-hide:after {
+  margin-top: 3px;
+  transform: rotate(45deg);
+}
+/* ////////////////////////////////// */
+
+
+
+/* Block with Form Sign In your account*/
+.wrap-input {
+  display: flex;
+  position: relative;
+  border-bottom: 2px solid #d9d9d9;
+}
+
+.wrap-input-email {
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
+
+.wrap-input-password {
+  margin-bottom: 10px;
+}
+
+.field-form-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  color: #d9d9d9;
+}
+
+.field-form-icon i {
+  font-size: 20px;
+  transition: .3s;
+}
+
+.wrap-input .field-form-icon,
+.wrap-input .form-field {
+  position: relative; 
+  height: 30px; 
+}
+
+.toggle-password-visibility {
+  cursor: pointer;
+}
+
+.wrap-input .form-field {
+  width: 100%;
+}
+
+.wrap-input .form-field > span {
+  position: absolute;
+  top: 50%;
+  font-size: 16px;
+  color: #999;
+  transform: translateY(-50%);
+  transition: .3s;
+}
+
+.wrap-input:before,
+.wrap-input:after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -2px;
+  background-color: #40E0D0;
+  transition: .4s;
+} 
+ 
+.wrap-input:before {
+  right: 50%;
+}
+
+.wrap-input:after {
+  left: 50%;
+}
+
+.wrap-input.focus:before,
+.wrap-input.focus:after {
+  width: 50%;
+}
+
+.wrap-input.focus .form-field > span {
+  top: -7px;
+  font-size: 14px;
+}
+
+.wrap-input.focus > .field-form-icon > i {
+  color: #40E0D0;
+}
+
+.wrap-input .form-field > input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 4px;
+  outline: none;
+  background: none;
+  font-size: 16px;
+  color: #616161;
+  -webkit-text-fill-color: #616161!important;
+}
+
+.link-forgot-password {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  width: 100%;
+  margin: 10px 10px 0 0;
+  font-size: 14px;
+  line-height: 1;
+  color: #2e9cc3;
+  text-decoration: none;
+  text-align: right;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.container-login-form-btn {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 15px;
+}
+
+.login-form-btn {
+  width: 100%;
+  height: 50px;
+  font-family: Poppins-Medium;
+  font-size: 16px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  border-radius: 25px;
+  border: none;
+  background-image: linear-gradient(to right, #1CD8D2 0%, #93EDC7 51%, #1CD8D2 100%);
+  background-size: 200% auto;
+  cursor: pointer;
+  transition: .8s;
+}
+
+
+
+.login-form-btn:hover {
+  background-position: right center;
+  transition: .8s;
+}
+/* ////////////////////////////////// */
+
+
+
+.account-creation-link {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  margin-top: 10px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1;
+  color: #00CC6A;
+  cursor: pointer;
+}

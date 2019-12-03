@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>OleApp Sign In</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+</head>
+<body>
+  <div class="background-gradient">
+
+    <div class="sign-in-container">
+      <h1 class="app-name">OleApp</h1>
+      <h2 class="sign-in-title">Sign In</h2>
+
+      <div class="sign-in-option-container sign-in-option-container-margin">
+        <div class="sign-in-option-container-title">
+          <span>
+            Quick access with
+          </span>
+        </div>
+
+        <div class="social-btns-container">
+          <ul class="social-btns" id="socialBtnsList">
+            <li>
+              <a class="social-btn btn-google" href="#">
+                <i class="fab fa-google"></i>
+              </a>
+            </li>
+            <li>
+              <a class="social-btn btn-facebook" href="#">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </li>
+            <li>
+              <a class="social-btn btn-twitter" href="#">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a class="social-btn btn-instagram" href="#">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+            <li class="hide-content hidden-attribute">
+              <a class="social-btn btn-vkontakte" href="#">
+                <i class="fab fa-vk"></i>
+                </a>
+            </li>
+            <li class="hide-content hidden-attribute">
+              <a class="social-btn btn-odnoklassniki" href="#">
+                <i class="fab fa-odnoklassniki"></i>
+              </a>
+            </li>
+            <li class="hide-content hidden-attribute">
+              <a class="social-btn btn-github" href="#">
+                <i class="fab fa-github"></i>
+              </a>
+            </li>
+            <li class="hide-content hidden-attribute">
+              <a class="social-btn btn-linkedin" href="#">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </li>
+          </ul>
+          <p class="trigger-wrap">
+            <button class="trigger-show" id="trigger-show">
+              Show all
+            </button>
+            <button class="trigger-hide hide-content hidden-attribute" id="trigger-hide">
+                Hide
+            </button>
+          </p>
+        </div>
+      </div>
+
+      <div class="sign-in-option-container">
+        <div class="sign-in-option-container-title">
+          <span>
+            Or use your account
+          </span>
+        </div>
+
+        <form id="signInForm"> 
+          <div class="wrap-input wrap-input-email">
+            <div class="field-form-icon">
+                <i class="fas fa-user" aria-hidden="true"></i>
+            </div>
+            <div class="form-field">
+                <span>Email</span>
+                <input type="email" name="email">
+            </div>
+          </div>
+
+          <div class="wrap-input wrap-input-password">
+            <div class="field-form-icon">
+                <i class="fas fa-lock" aria-hidden="true"></i>
+            </div>
+            <div class="form-field">
+                <span>Password</span>
+                <input type="password" name="pass" id="inputPassword">
+            </div>
+            <div class="field-form-icon hide-content toggle-password-visibility" id="toggle-password-visibility">
+                <i class="far fa-eye" aria-hidden="true"></i>
+            </div>
+          </div>
+
+          <a href="#" class="link-forgot-password">
+            Forgot password?
+          </a>
+
+          <div class="container-login-form-btn">
+            <button class="login-form-btn">
+              Sign In
+            </button>
+          </div>
+
+        </form>
+      </div>
+
+      <div class="sign-in-option-container last-option-container">
+          <div class="sign-in-option-container-title">
+              <span>
+                Or create your account using
+              </span>
+            </div>
+
+            <a href="#" class="account-creation-link">
+              Sign Up
+            </a>
+      </div>
+
+    </div>
+  </div>
+
+  <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
