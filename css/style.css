@@ -127,6 +127,12 @@ margin-bottom: 10px;
   margin: 10px 10px 5px 10px;
 }
 
+@media (min-width: 320px) and (max-width: 359px) {
+  .social-btns li {
+    margin: 5px 5px 2.5px 5px;
+  }
+}
+
 .social-btns .social-btn {
   display: flex;
   justify-content:center;
@@ -140,6 +146,27 @@ margin-bottom: 10px;
   box-shadow: 0 5px 15px -5px rgba(0,0,0,0.7);
   background-color: #f5f5f5;
   color: #3498db;
+}
+
+@media (min-width: 372px) and (max-width: 399px) {
+  .social-btns .social-btn {
+    width: 58px;
+    height: 58px;
+  }
+}
+
+@media (min-width: 360px) and (max-width: 371px) {
+  .social-btns .social-btn {
+    width: 55px;
+    height: 55px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 359px) {
+  .social-btns .social-btn {
+    width: 50px;
+    height: 50px;
+  }
 }
 
 .social-btns .btn-google {
